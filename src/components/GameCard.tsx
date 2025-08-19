@@ -3,7 +3,7 @@ import { Card, HStack, Heading, Image } from "@chakra-ui/react";
 import CriticScore from "./CriticScore";
 import { Game } from "../hooks/useGames";
 import PlatformIconList from "./PlatformIconList";
-import getCroppedImageUrl from "@/services/imageUrl";
+import getCroppedImageUrl from "../services/imageUrl";
 
 interface Props {
   game: Game;
@@ -11,7 +11,7 @@ interface Props {
 
 const GameCard = ({ game }: Props) => {
   return (
-    <Card.Root borderRadius={10} overflow="hidden">
+    <Card.Root w="300px" borderRadius={10} overflow="hidden">
       <Image src={getCroppedImageUrl(game.background_image)} />
       <Card.Body gap="2">
         <Heading fontSize="2xl">{game.name}</Heading>
