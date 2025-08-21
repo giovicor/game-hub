@@ -9,7 +9,7 @@ const CriticScore = ({ score }: Props) => {
 
   return (
     <Badge size="md" px={2} colorPalette={color}>
-      {score}
+      {score || "none"}
     </Badge>
   );
 };
