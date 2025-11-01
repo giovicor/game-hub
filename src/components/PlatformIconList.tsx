@@ -10,9 +10,9 @@ import {
 import { HStack, Icon } from "@chakra-ui/react";
 import { SiNintendo, SiSega } from "react-icons/si";
 
-import { IconType } from "react-icons";
+import type { IconType } from "react-icons";
 import { MdPhoneIphone } from "react-icons/md";
-import { Platform } from "../hooks/useGames";
+import type { Platform } from "../hooks/useGames";
 
 interface Props {
   platforms: Platform[];

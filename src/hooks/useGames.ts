@@ -1,4 +1,4 @@
-import { GameQuery } from "../App";
+import type { GameQuery } from "../App";
 import useData from "./useData";
 
 export interface Platform {
