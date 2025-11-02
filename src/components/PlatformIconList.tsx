@@ -8,7 +8,13 @@ import {
   FaXbox,
 } from "react-icons/fa";
 import { HStack, Icon } from "@chakra-ui/react";
-import { SiNintendo, SiSega } from "react-icons/si";
+import {
+  SiAtari,
+  SiCommodore,
+  SiD3Dotjs,
+  SiNintendo,
+  SiSega,
+} from "react-icons/si";
 
 import type { IconType } from "react-icons";
 import { MdPhoneIphone } from "react-icons/md";
@@ -31,8 +37,12 @@ const PlatformIconList = ({ platforms }: Props) => {
     android: FaAndroid,
     ios: MdPhoneIphone,
     web: BsGlobe,
+    atari: SiAtari,
+    "3do": SiD3Dotjs,
+    "commodore-amiga": SiCommodore,
   };
 
+  /*
   const getPlatformFamily = (detail: string): string => {
     if (detail.startsWith("android")) {
       return "android";
@@ -52,6 +62,7 @@ const PlatformIconList = ({ platforms }: Props) => {
       return "web";
     }
   };
+  */
 
   /*
   return (
@@ -66,6 +77,15 @@ const PlatformIconList = ({ platforms }: Props) => {
         ))}
     </HStack>
   );
+  */
+
+  /*
+  platforms.forEach((p) => {
+    if (!iconMap[p.slug]) {
+      console.log("platform not found");
+      console.log(p);
+    }
+  });
   */
 
   return (
