@@ -18,7 +18,7 @@ import {
 
 import type { IconType } from "react-icons";
 import { MdPhoneIphone } from "react-icons/md";
-import type { Platform } from "../hooks/useGames";
+import type { Platform } from "../hooks/usePlatforms";
 
 interface Props {
   platforms: Platform[];

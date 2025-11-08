@@ -9,8 +9,8 @@ export interface Platform {
   slug: string;
 }
 
-const usePlatforms = () => {
-  return useQuery<FetchResponse<Platform>, Error>({
+const usePlatforms = () =>
+  useQuery<FetchResponse<Platform>, Error>({
     queryKey: ["platforms"],
     queryFn: () =>
       apiClient
@@ -19,6 +19,5 @@ const usePlatforms = () => {
     staleTime: 24 * 60 * 60 * 1000, // 24 hours
     initialData: { count: platforms.length, results: platforms },
   });
-};
 
 export default usePlatforms;
