@@ -1,0 +1,13 @@
+import type { Platform } from "./usePlatforms";
+
+export interface Game {
+  id: number;
+  name: string;
+  slug: string;
+  description_raw: string;
+  background_image: string;
+  parent_platforms: { platform: Platform }[];
+  platforms: { platform: Platform }[];
+  metacritic: number;
+  rating_top: number;
+}
