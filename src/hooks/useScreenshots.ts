@@ -1,5 +1,5 @@
 import APIClient from "../services/apiClient";
-import type { Screenshot } from "../entities/Screenshot";
+import type Screenshot from "../entities/Screenshot";
 import { useQuery } from "@tanstack/react-query";
 
 const useScreenshots = (gameId: number) => {
